@@ -1,1 +1,1 @@
-Carpeta de imagenes preinforme 1
+Carpeta de imagenes preinforme I
