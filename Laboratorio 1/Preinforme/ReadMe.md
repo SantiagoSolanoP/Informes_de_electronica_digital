@@ -35,16 +35,17 @@
 
 
    **Negador TTL 74LS04**: 
-![Datasheet](./Preinforme/Datasheets/HD74LS04.PDF)
+![Datasheet](./Datasheets/HD74LS04.PDF)
 
    **Negador CMOS CD4069**: 
-![Datasheet](./Preinforme/Datasheets/CD4069.PDF)
+![Datasheet](./Datasheets/CD4069.PDF)
    
    
    
 
 3. Determinar el circuito equivalente para cada uno de los dispositivos.   
 **Negador TTL 74LS04**: 
-![imagenesdatasheet](./Preinforme/Imagenes/74lS04.png)
+![imagenesdatasheet](./Imagenes/74lS04.png)
+
 **Negador CMOS CD4069**: 
-![imagenesdatasheet](./Preinforme/Imagenes/CD4069.png)
+![imagenesdatasheet](./Imagenes/CD4069.png)
