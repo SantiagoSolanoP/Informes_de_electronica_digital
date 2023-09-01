@@ -1,4 +1,6 @@
 # COMPARACIÓN DE TECNOLOGÍA
+## Introduccion
+A lo largo de este informe se desarrollará la práctica relacionada con la comparación entre las compuertas lógicas de tipo TTL y CMOS, comparando las características principales de estas y realizando lo respectiva medición de datos mediante simulaciones, para posteriormente compararlas con los resultados obtenidos experimentalmente. Ademas, a partir de estos datos, permitir conocer cuáles son las ventajas y desventajas de cada tipo de estas compuertas y entender en qué casos es más conveniente usar cada una de ellas.
 
 ## Objetivos
 * Identificar las características de un dispositivo fabricado en diferentes tecnologías.
@@ -21,15 +23,15 @@
    Entonces se opto por incluir una tabla comparativa.
    | Comparacion Tecnologias         | TTL 74LS04    | CMOD CD4069   |
    | :---                            | :---:         |        :---:  |
-   | Tension de trabajo              | Content Cell  | 3 a 15v       |
-   | Tiempo de subida y bajada       | Content Cell  | 20ns          |
+   | Tension de alimentación         |       5V      |    3 a 15v    |
+   | Tiempo de subida y bajada       | 4.5 y 5 ns    |      20ns     |
    | Tiempo de retardo               | Content Cell  |90 50ns con v+ |
    | Potencia por compuerta          | Content Cell  | Content Cell  |
    | Farm out                        | Content Cell  | Content Cell  |
    | Producto frecuencia y potencia  | Content Cell  | Content Cell  |
    | Compuerta tipo                  |      NOT      |      NOT      |
-   | Capacidad corriente salida "1"  | Content Cell  | Content Cell  |
-   | Capacidad corriente salida "0"  | Content Cell  | Content Cell  |
+   | Capacidad corriente salida "1"  |    -0.4 mA    | Content Cell  |
+   | Capacidad corriente salida "0"  |      8  mA    | Content Cell  |
    | Salida Open Colector            | Content Cell  | Content Cell  |
    | Nivel de ruido soportado        | Content Cell  | Content Cell  |
 
@@ -39,7 +41,8 @@
 
    **Negador CMOS CD4069**: 
 ![Datasheet](./Datasheets/CD4069.PDF)
-   
+
+
    
    
 
