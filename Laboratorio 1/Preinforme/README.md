@@ -44,14 +44,33 @@ En las primeras simulaciones buscamos comparar las señales de entrada y de sali
 
 * En esta simulación se empieza con el potenciometro a un valor maximo de 9kΩ en dos circuitos en donde se cambia unicamente el negador de TTL a CMOS.
 * <img src="Imagenes/Comparación ttl y cmos con volataje de entrada  aproximado a 5v.png" width="90%" height="90%">
-   Se observa que el negador TTL al recibir una señal cuadrada de aproximadamente 4.5V se 200ns de subida y de bajada en un tiempo de 2400ns no presenta cambios tan notorios como los del negador CMOS, donde encontamos una señal de salida desfasada con la de entrada, pero con mayor voltaje en la subida de la salida.
+   
+Se observa que el negador TTL al recibir una señal cuadrada de aproximadamente 4.5V se 200ns de subida y de bajada en un tiempo de 2400ns no presenta cambios tan notorios como los del negador CMOS, donde encontamos una señal de salida desfasada con la de entrada, pero con mayor voltaje en la subida de la salida.
 
-* <img src="Imagenes/Comparación ttl y cmos con volataje de entrada  aproximado a 5v.png" width="90%" height="90%">
+* Se observa que al disminuir el valor de la resistencia equivalente del potenciometro el voltaje de entrada tambien disminuye, por lo tanto se logro modificar el voltaje de entrada de los negadores con el potenciometro. En este caso se disminuyo el valor del potenciometro a 6kΩ y se consiguio un voltaje de entrada de aproximadamnete 3V.
 * <img src="Imagenes/Comparación ttl y cmos con volataje  de entrada aproximado a 3v.png" width="90%" height="90%">
+
+En esta simulación se observa una de las grandes diferencias que existe entre los negadores TTL y CMOS, ya que los negadores aunque mantienen un comportamiento bastante similar al de la anterior simulación, presenta un voltaje se salida mmenor el TTL en comparación con el CMOS, ya que el TTL muestra aproximadamente 3.5V y el CMOS más de 4.5V en la salida.
+
+* Ahora que se conoce como funcionan los negadores con una entrada de voltaje correcta, se busco simular el comportamiento de los negadores con un voltaje de entrada de 2.5V, el cual esta en la zona de incertidumbre a partir de los datos del datasheet.
 * <img src="Imagenes/Comparación ttl y cmos con volataje de entrada  aproximado a 2_5v.png" width="90%" height="90%">
+
+Se obtiene que la señal de voltaje cuadrada sin importa si esta en subida o en baja, para los negadores siempre es una entrada de 0 logico, se espera obtener esta señal pero al mismo tiempo cualquier otra ya que se conoce que en este tipo de compuertas logicas la zona de incertidumbre en la practica impide dar certeza de obtener esta misma señal.
+
+* Para terminar las simulaciones en las que se comparan las señales de voltaje, se busco bajar voltaje de entrada a aproximadamente 0V.
 * <img src="Imagenes/Comparación ttl y cmos con volataje de entrada  aproximado a 0v.png" width="90%" height="90%">
+
+La simulación permitio obtener lo que se esperaba, si la señal cuadrada de voltaje que recibe cualquiera de los negadores es aproximadamente 0V se obtiene el mayor voltaje de salida.
+
+* Para observar el funcionamiento de los negadores en la practica de laboratorio, se desarrollaron los siguientes circuitos simulados en donde se presenta como se comporta un led dependiendo de la señal de entrada. En los circuitos presentados se observan los momentos en los que el led esta encendido y apagado, cuando los dos negadores funcionan correctamente.
+
+* Entrada de aproximadamente 0V
+
 * <img src="Imagenes/Negador ttl con entrada de aproximadamente 0V.png" width="90%" height="90%">
 * <img src="Imagenes/Negador cmos con entrada de aproximadamente 0V.png" width="90%" height="90%">
+
+* Salida de aproximadamente 0V
+
 * <img src="Imagenes/Negador ttl con salida de aproximadamente 0V.png" width="90%" height="90%">
 * <img src="Imagenes/Negador cmos con salida de aproximadamente 0V.png" width="90%" height="90%">
 
@@ -66,3 +85,7 @@ En las primeras simulaciones buscamos comparar las señales de entrada y de sali
 
  **Negador CMOS CD4069**: 
   * <img src="Imagenes/CD4069.png" width="50%" height="50%">
+
+4. Conclusión
+
+A partir de las simulaciones se llega a comprender que los negadores TTL 74LS04 y CMOS CD4069, presentan diferencias en varias de sus caracteristicas y que estos cambios son importantes en el desarrollo de circuitos más complejos. Inicialmente se observo que el negador TTL es más preciso al invertir la señal ya que no se observa un desface tan notorio como en el CMOS, aunque se debe recalcar que el negador CMOS al invertir las señales de 0 logico, permite obtener salidas de mayor voltaje en comparación que el TTL, lo que ayuda a diseñar circuitos con menos perdidas energeticas y de mayor tamaño.
