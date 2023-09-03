@@ -9,7 +9,7 @@ A lo largo de este informe se desarrollará la práctica relacionada con la comp
 * Negador TTL 74LS04
 * Negador CMOS CD4069
 * Datasheets
-* 
+  
 ## Procedimiento
 
 ### Parte 1
