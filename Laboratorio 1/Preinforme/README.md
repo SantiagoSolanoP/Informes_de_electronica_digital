@@ -78,13 +78,74 @@ La simulación permitio obtener lo que se esperaba, si la señal cuadrada de vol
 
    
    
-
 3. Determinar el circuito equivalente para cada uno de los dispositivos.   
  **Negador TTL 74LS04**:
   * <img src="Imagenes/74lS04.png" width="50%" height="50%">
+ Nos apoyamos en este circuito equivalente para un transistor bjt en saturación:
+ 
+  * <img src="Imagenes/circuitos equivalentesbjt.png" width="50%" height="50%">
+  
+ Cuando se le aplica un 1 lógico:
+ 
+  * <img src="Imagenes/SN74LS04 - 1.png" width="50%" height="50%">
+  
+ El transistor 1 npn, se polariza en directo, logrando un aumento de B veces y esa corriente fluirá hacía los transistores de abajo, transistor 3 y 4, los cuales se polarizarán en directo. y en la salida habrá un 0 
+ lógico, puesto que cuando conduce el transistor 4, la tensión Vds cae a 0.
+ 
+ Cuando se le aplica un 0 lógico:
+
+   * <img src="Imagenes/SN74LS04 - 0.png" width="50%" height="50%">
+  
+ El transistor 1 no se polariza porque la tensión vcc desemboca a A, reduciendo la tensión que puede haber en el gate del transistor 1, por lo que no conducirá.
+ Por otro lado, como el transistor 1 no conduce, el drain mantendrá una tensión que exitará el gate del transistor 2 y luego el transistor 3, donde el transistor 3 en el source mantendrá una tensión que será un 1 
+ lógico, ya que los demás transistores al no estar exitados se comportan como circuito abierto, logrando así el nivel requerido. 
 
  **Negador CMOS CD4069**: 
   * <img src="Imagenes/CD4069.png" width="50%" height="50%">
+
+ Para su análisis digital, quitamos los diodos de protección:
+
+  * <img src="Imagenes/CD4069 - primitivo.png" width="50%" height="50%">
+ 
+ Se van a presentar dos casos, así que vamos a definir las variables que usaremos para simplificar el análisis:
+ 
+  * Vcc = 5
+  * Vt = |2|
+
+ CASO 1: Entrada(ALTO) = Vdd.
+ 
+   * <img src="Imagenes/CD4069 - 1 .png" width="50%" height="50%">
+   
+    * PMOS:
+      Vgs = (Vdd-Vdd) <= Vt
+      0 <= (-2)
+      Fuente y drenador se aislan, el transistor pmos no conduce.
+      
+    * NMOS:
+      Vgs = (Vdd - 0)  >= Vt
+      Vdd >= Vt
+      5 >= 2
+      Fuente y drenador se unen mediante un canal, el transistor nmos conduce.
+
+ CASO 2: Entrada(BAJO) = 0.
+ 
+   * <img src="Imagenes/CD4069 - 0 .png" width="50%" height="50%">
+    
+    * PMOS:
+      Vgs = (0-Vdd) <= Vt
+      (-5) <= (-2)
+      Fuente y drenador se unen mediante un canal, el transistor pmos conduce.
+      
+    * NMOS:
+      Vgs = (0 - vdd)  >= Vt
+      -Vdd >= Vt
+      -5 >= 2
+      Fuente y drenador se aislan, el transistor nmos no conduce.
+
+
+   
+
+  
 
 4. Conclusión
 
