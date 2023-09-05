@@ -91,6 +91,7 @@ La simulación permitio obtener lo que se esperaba, si la señal cuadrada de vol
   
  El transistor 1 npn, se polariza en directo, logrando un aumento de B veces y esa corriente fluirá hacía los transistores de abajo, transistor 3 y 4, los cuales se polarizarán en directo. y en la salida habrá un 0 
  lógico, puesto que cuando conduce el transistor 4, la tensión Vds cae a 0.
+ El transistor 2(en amarillo) no conduce ya que su tensión es mucho menor, a su vez los diodos encerrados ayudan a dar una respuesta más rapida para el cambio del estado lógico. 
  
  Cuando se le aplica un 0 lógico:
 
