@@ -205,9 +205,29 @@ Por último se realizará el análisis de la curva de histéresis de la compuert
 <p><i>Curva de Histeresis de la compuerta CD4069</i></p>
 Al analizar la gráfica obtenida por la curva de histéresis de la compuerta, podemos darnos cuenta que el comportamiento de está compuesta a pesar de tener similitudes con los de una compuerta ideal, presenta una curva generada a partir de los valores de cambio entre High y low y, al entrar en los valores de umbral la compuerta, deja de funcionar idealmente hasta que vuelve a entrar nuevamente en los valores definidos para HIGH o para LOW, donde nuevamente la compuertas tiene un comportamiento adecuado.
 
+## Analisis de resultados
+A partir de las gráficas y de los resultados obtenidos anteriormente podremos obtener algunos datos de gran importancia para entender el funcionamiento de nuestras compuertas, estos resultados se registrarán en la siguiente tabla:
+   | Comparacion Tecnologias         | TTL 74LS04    | CMOS CD4069   |
+   | :---                            | :---:         |        :---:  |
+   | Tension de alimentación         |       5V      |       5V      |
+   | Tiempo de subida                |       50 ns   |      150ns    |
+   | Tiempo de Bajada                |       25 ns   |      160ns    |
+   | Tiempo de Almacenamiento        |      75 ns    |      N/E      |
+   | Compuerta tipo                  |      NOT      |      NOT      |
+   | Voltaje de entrada "1"          |      ~5V      |      ~5V      |
+   | Voltaje de salida "1"           |      ~5V      |      4.88V    |
+   | Voltaje de entrada "0"          |      ~0V      |      ~0V      |
+   | Voltaje de salida "0"           |      ~0V      |      ~0V      |
+   
+A partir de estos datos podemos obtener varias conclusiones:
+- A pesar de que ambas compuertas tenían una alimentación del mismo voltaje y una entrada para prácticamente idéntica, las salidas de cada una de las compuertas presentan varias diferencias: la primera se encuentra en el voltaje de salida, puesto a qué mientras que la compuerta de tipo TTL nos daba como salida aproximadamente con mismo valor de voltaje que recibía la entrada, la compuerta CMOS daba como salida un valor de voltaje ligeramente menor al suministrado inicialmente en la entrada, esto debido principalmente al consumo generado por los transistores CMOS.
 
-  
+- A pesar de que ambas compuertas tienen un comportamiento prácticamente idéntico, al ser compuertas negadoras hay una diferencia muy fundamental, y esta se da en el tiempo de subida y de bajada de cada una de estas. Mientras que las compuertas de tipo TTL tienen un tiempo de subida y de bajada muy pequeño, las compuertas de tipo CMOS tienen un tiempo de subida y de bajada considerablemente mayor, siendo aproximadamente tres veces más el tiempo de subida y 6 veces mayor el tiempo de bajada en el CMOS.
 
-4. Conclusión
+- Mientras que las compuertas de tipo TTL, presentan un comportamiento de acople o de estabilización de alrededor de 75 nanosegundos, generando un pequeño efecto sinusoidal entre el cambio de estados de la señal (es decir en el inicio de su etapa en HIGH y el inicio de su etapa en LOW), la compuerta CMOS no presenta este tipo de estabilización, dado que tiene un tiempo de subida mucho mayor la estabilización sea poco a poco mientras la señal va cambiando de estado.
+
+4. Conclusiónes
 
 A partir de las simulaciones se llega a comprender que los negadores TTL 74LS04 y CMOS CD4069, presentan diferencias en varias de sus caracteristicas y que estos cambios son importantes en el desarrollo de circuitos más complejos. Inicialmente se observo que el negador TTL es más preciso al invertir la señal ya que no se observa un desface tan notorio como en el CMOS, aunque se debe recalcar que el negador CMOS al invertir las señales de 0 logico, permite obtener salidas de mayor voltaje en comparación que el TTL, lo que ayuda a diseñar circuitos con menos perdidas energeticas y de mayor tamaño.
+
+Para escoger entre el uso de compuertas de tipo TTL y CMOS podemos encontrar varias características las cuales pueden ser importantes a la hora de escoger, como lo puede llegar a ser la eleccion entre velocidad o eficiencia energética, o el calentamiento de cada una de estas compuertas. Según las necesidades que tengamos, cada una de estas compuertas puede llegar a ser útil en diferentes situaciones, por ejemplo, para manejar altas velocidades de conmutación es ideal un TTL, sin embargo, los dispositivos CMOS pueden ser ideales para aplicaciones de bajo consumo de energía, por tal razón no se puede decir cuál de las dos compuertas es mejor, dado que cada una de estas están hechas para diferentes usos y aplicaciones.
