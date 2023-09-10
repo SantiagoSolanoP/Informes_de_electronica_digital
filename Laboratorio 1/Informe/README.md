@@ -74,6 +74,7 @@ Para realizar la medición del tiempo de subida, tiempo de bajada y tiempo de es
 
 ### Histeresis
 Por último se realizará el análisis de la curva de histéresis de la compuerta CD4069, tras realizar el mismo procedimiento que se realizó para el análisis de la compuerta 74LS04 se pudo obtener la siguiente gráfica:
-<img src="Imagenes/Histeresis 74LS04.jpeg" title="Histeresis 74LS04" width="90%" height="90%">
-<p><i>Curva de Histeresis de la compuerta 74LS04</i></p>
+<img src="Imagenes/Histeresis CD4069.jpeg" title="Histeresis 74LS04" width="90%" height="90%">
+<p><i>Curva de Histeresis de la compuerta CD4069</i></p>
 Al analizar la gráfica obtenida por la curva de histéresis de la compuerta, podemos darnos cuenta que el comportamiento de está compuesta a pesar de tener similitudes con los de una compuerta ideal, presenta una curva generada a partir de los valores de cambio entre High y low y, al entrar en los valores de umbral la compuerta, deja de funcionar idealmente hasta que vuelve a entrar nuevamente en los valores definidos para HIGH o para LOW, donde nuevamente la compuertas tiene un comportamiento adecuado.
+
