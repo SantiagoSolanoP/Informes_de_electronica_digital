@@ -28,8 +28,8 @@ Entonces para mostrar los datos se opto por incluir una tabla comparativa.
    | Compuerta tipo                  |      NOT      |      NOT      |
    | Capacidad corriente salida "1"  |    -0.4 mA    |    -0.88 mA   |
    | Capacidad corriente salida "0"  |      8  mA    |     0.88 mA   |
-
-
+   | Voltaje de entrada "1"          |    Min 2V     |    Min 4 V    |
+   | Voltaje de entrada "0"          |   Max 0.8V    |     Max 1V    |
    **Negador TTL 74LS04**: [<img src="Imagenes/pdf.png" width="4%" height="4%">](Datasheets/HD74LS04.PDF)
 
    **Negador CMOS CD4069**: [<img src="Imagenes/pdf.png" width="4%" height="4%">](Datasheets/CD4069.PDF)
@@ -225,6 +225,12 @@ A partir de estos datos podemos obtener varias conclusiones:
 - A pesar de que ambas compuertas tienen un comportamiento prácticamente idéntico, al ser compuertas negadoras hay una diferencia muy fundamental, y esta se da en el tiempo de subida y de bajada de cada una de estas. Mientras que las compuertas de tipo TTL tienen un tiempo de subida y de bajada muy pequeño, las compuertas de tipo CMOS tienen un tiempo de subida y de bajada considerablemente mayor, siendo aproximadamente tres veces más el tiempo de subida y 6 veces mayor el tiempo de bajada en el CMOS.
 
 - Mientras que las compuertas de tipo TTL, presentan un comportamiento de acople o de estabilización de alrededor de 75 nanosegundos, generando un pequeño efecto sinusoidal entre el cambio de estados de la señal (es decir en el inicio de su etapa en HIGH y el inicio de su etapa en LOW), la compuerta CMOS no presenta este tipo de estabilización, dado que tiene un tiempo de subida mucho mayor la estabilización sea poco a poco mientras la señal va cambiando de estado.
+
+Por último si comparamos los datos obtenidos con los datos teóricos de cada una de las compuertas podremos obtener y concluir que:
+
+- En la compuerta TTL el tiempo de subida y de bajada es ligeramente mayor a los esperados teóricamente esto puede deberse a múltiples factores como lo pueden ser: la construcción interna de cada una de las compuertas, tolerancias de la resistencia utilizadas experimentalmente, errores discretos de medición, entre otros parámetros. Sin embargo, los tiempos de subida y de bajada de las de la compuerta hacemos son prácticamente idénticos a los esperados teóricamente.
+
+- Durante la toma de datos experimentales nos pudimos dar cuenta de que a la hora de la medición, los voltajes de entrada, al estar dentro del rango que permite cada una de las compuertas, la salida se comporta de una manera idónea es decir, a partir de estos datos podemos confirmar los voltajes de entrada de cada una de las compuertas.
 
 4. Conclusiónes
 
