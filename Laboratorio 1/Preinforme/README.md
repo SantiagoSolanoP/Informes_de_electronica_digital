@@ -19,19 +19,15 @@ A lo largo de este informe se desarrollará la práctica relacionada con la comp
 
 Entonces para mostrar los datos se opto por incluir una tabla comparativa.
 
-   | Comparacion Tecnologias         | TTL 74LS04    | CMOD CD4069   |
+   | Comparacion Tecnologias         | TTL 74LS04    | CMOS CD4069   |
    | :---                            | :---:         |        :---:  |
    | Tension de alimentación         |       5V      |    3 a 15v    |
-   | Tiempo de subida y bajada       | 4.5 y 5 ns    |      20ns     |
-   | Tiempo de retardo               | Content Cell  |90 50ns con v+ |
-   | Potencia por compuerta          | Content Cell  | Content Cell  |
-   | Farm out                        | Content Cell  | Content Cell  |
-   | Producto frecuencia y potencia  | Content Cell  | Content Cell  |
+   | Tiempo de subida y bajada       |   9 y 15 ns   |      150ns    |
+   | Tiempo de Almacenamiento        |      N/E      |      50ns     |
+   | Potencia por compuerta          |      N/E      |     700 mW    |
    | Compuerta tipo                  |      NOT      |      NOT      |
-   | Capacidad corriente salida "1"  |    -0.4 mA    | Content Cell  |
-   | Capacidad corriente salida "0"  |      8  mA    | Content Cell  |
-   | Salida Open Colector            | Content Cell  | Content Cell  |
-   | Nivel de ruido soportado        | Content Cell  | Content Cell  |
+   | Capacidad corriente salida "1"  |    -0.4 mA    |    -0.88 mA   |
+   | Capacidad corriente salida "0"  |      8  mA    |     0.88 mA   |
 
 
    **Negador TTL 74LS04**: [<img src="Imagenes/pdf.png" width="4%" height="4%">](Datasheets/HD74LS04.PDF)
