@@ -1,1 +1,0 @@
-Imagenes de Informe I
