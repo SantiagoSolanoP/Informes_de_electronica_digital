@@ -85,14 +85,42 @@ Para determinar el fan-in y fan-out, se tuvo en cuenta la información del datas
 El circuito que se tuvo en cuenta para obtener el fan-in y fan-out de la compuerta 74LS04 y CD4069 es el siguiente: 
 
 <div align="center">
-<img src="Imagenes/Comparación de la conexión de dos compuertas.png" title="Histeresis 74LS04" width="90%" height="90%">
+<img src="Imagenes/Comparación de la conexión de dos compuertas.png" title="Comparación de la conexión de dos compuertas" width="90%" height="90%">
+</div>
+
+Es importante mencionar que los circuitos necesitaron una resistencia pull-up para conectar más de una compuerta debido a los errores que llega a producir un cero logico cuando pasa de una compuerta a otra.
+
+Se puede observar en el anterior circuito simulado cambios notorios en la señal de voltaje de salida con respecto a las señales obtenidas para solo una compuerta TTL o CMOS. Inicialmente se observa como afecta el consumo energetico elevado del TTL 74LS04 en el voltaje de subida en la salida, al compararlo con el voltaje maximo de entrada de 5V ya que se obtiene que es menor de los 3V y se acerca a la zona de incertidumbre. Adicionalmente se encuentra que la potencia consumida por el CMOS es minima ya que no se evidencia un cambio notorio como sucede con el TTL. En este circuito tambien se puede observar una de las desventajas principales de la compuerta CMOS, la cual es su desface, el cual con dos compuertas se duplico.
+
+Se tomo un resitor de 10KΩ como la carga del circuito donde se obtiene el voltaje de salida, teniendo en cuenta lo anterior se observo que la compuerta CMOS con 9 compuertas el desface es de más 40 veces mayor al que tiene una compuerta, aunque al realizar varias simulaciones se llego a la conclusión que depende en gran medida de la carga. A continuación esta el circuito que muestra el comportamiento del CMOS en comparación con el TTL.
+
+<div align="center">
+<img src="Imagenes/2TTL vs 9CMOS.png" title="2TTL vs 9CMOS" width="90%" height="90%">
 </div>
 
 Al relizar las simulaciones se tuvo en cuenta que la compuerta TTL tiene mayor consumo energetico en comparación con el CMOS, lo que hace que la compuerta TTL 74LS04 tenga un fan-in y fan-out de solo 2 en comparación con el CMOS en el que no se encontro un limite exacto en las simulaciones ya que la perdida de energia es minima hasta con 10 compuertas.
 
+Para observar con mayor precisión el comportamiento del CMOS al aumentar su conexión con compuertas del mismo tipo se disminuyeron las conexiones a 5, lo que permitio obtener el circuito mostrado en la siguiente simulación:
+
 <div align="center">
-<img src="Imagenes/2TTL vs 9CMOS.png" title="Histeresis 74LS04" width="90%" height="90%">
+<img src="Imagenes/3TTL vs 5CMOS.png" title="2TTL vs 5CMOS" width="90%" height="90%">
 </div>
+
+Los graficos muestran el retraso en la señal del CMOS, que se menciono anteriormente, pero adicionalmente muestran con claridad como el TTL 74LS04 una perdida de potencia del 15% que se evidencia como una disminución del voltaje.
+
+Todos los anteriores graficos se trabajaron en nanosegundos y microsegundos, pero ahora se mostrara que sucede si se toma una frecuencia de 1kHz en la señal de entrada, lo que permite visualizar la señal en milisegundos y observar un comportamiento notoriamente diferente a el obtenido en las simulaciones anteriores, como se muestra a continuación:
+
+<div align="center">
+<img src="Imagenes/Comparación de la señal de entrada y salida para mas de dos compuertas.png" title="Comparación de la señal de entrada y salida para mas de dos compuertas" width="50%" height="50%">  
+</div>
+
+La anterior simulación muestra que la compuerta CD4069 CMOS, llega a ser la mejor opción cuando se trabaja con frecuencias menores a 1kHz ya que no hay una perdida energetica notoria, la señal tiene un retraso despreciable y permite conectar una gran cantidad de compuertas sin la necesidad de un buffer. La compuerta TTL 74LS04 enves muestra una disminución notoria del voltaje que la vuleve una opción menos adecuada para fecuencias menores a 1kHz, se observa una mayor perdida energetica que aumenta constantemente al conectar más compuertas y la necesidad de utilizar buffer para recuperar la señal que se pierde en gran medida por la conexion de dos compuertas.
+
+### Conclusión
+
+Las compuertas CD4069 CMOS y TTL 74LS04, permiten la creación de circuitos logicos con caracteristicas similares pero tienen caracteristicas notoriamente diferentes que provienen de la composición de su circuito interno. El TTL mostro siempre una mayor precisión en comparación con el CMOS pero con la consecuencia de que puede producir circuitos de mayor costo debido a que se debe tener en cuenta mantener una señal estable al usar más de una compuerta y adicionalmente esto genera un mayor gasto energetico. Por lo tanto, se puede recomendar cuando se busca una precisión mucho mayor a la del CMOS o cuando se trabaja con altas frecuencias para no trabajaron con el retraso en la señal que tiene la compuerta CD4069 CMOS en frecuencias de MHz o GHz. La compuerta CMOS mostro que es util en la fabricación de circuitos más economicos, y es recomendable cuando se trabaja con frecuencias menores a 1kHz ya que su precisión es aproximademente igual a la del TTL pero sin ninguna de las desbentajas que se mencionaron anteriormenete. 
+
+
 
 
 
