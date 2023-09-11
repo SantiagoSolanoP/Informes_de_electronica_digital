@@ -15,7 +15,7 @@ A lo largo de este informe se desarrollará la práctica relacionada con la comp
 ### Parte 1
 Para el desarrollo práctico de este laboratorio será necesario realizar el siguiente montaje para cada una de las compuertas:
 
-Inserte circuito aqui
+<img src="Imagenes/Comparación ttl y cmos con volataje de entrada  aproximado a 5v.png" width="90%" height="90%">
 
 Seguidamente, se procederá a configurar la fuente de entrada del sistema con una amplitud de 5 voltios y una frecuencia de 1 kHz en una configuracion de onda cuadrada, esto de acuerdo a las especificaciones dadas por el datasheet de cada uno de los dispositivos.
 
@@ -77,4 +77,22 @@ Por último se realizará el análisis de la curva de histéresis de la compuert
 <img src="Imagenes/Histeresis CD4069.jpeg" title="Histeresis 74LS04" width="90%" height="90%">
 <p><i>Curva de Histeresis de la compuerta CD4069</i></p>
 Al analizar la gráfica obtenida por la curva de histéresis de la compuerta, podemos darnos cuenta que el comportamiento de está compuesta a pesar de tener similitudes con los de una compuerta ideal, presenta una curva generada a partir de los valores de cambio entre High y low y, al entrar en los valores de umbral la compuerta, deja de funcionar idealmente hasta que vuelve a entrar nuevamente en los valores definidos para HIGH o para LOW, donde nuevamente la compuertas tiene un comportamiento adecuado.
+
+### Parte 2
+
+Para determinar el fan-in y fan-out, se tuvo en cuenta la información del datasheet de cada compuerta, se realizaron las simulaciones para observar los resultados esperados y las caracteristicas que diferencian a las compuertas TTL de las CMOS debido a el circuito interno caracteristico.
+
+El circuito que se tuvo en cuenta para obtener el fan-in y fan-out de la compuerta 74LS04 y CD4069 es el siguiente: 
+
+<div align="center">
+<img src="Imagenes/Comparación de la conexión de dos compuertas.png" title="Histeresis 74LS04" width="90%" height="90%">
+</div>
+
+Al relizar las simulaciones se tuvo en cuenta que la compuerta TTL tiene mayor consumo energetico en comparación con el CMOS, lo que hace que la compuerta TTL 74LS04 tenga un fan-in y fan-out de solo 2 en comparación con el CMOS en el que no se encontro un limite exacto en las simulaciones ya que la perdida de energia es minima hasta con 10 compuertas.
+
+<div align="center">
+<img src="Imagenes/2TTL vs 9CMOS.png" title="Histeresis 74LS04" width="90%" height="90%">
+</div>
+
+
 
