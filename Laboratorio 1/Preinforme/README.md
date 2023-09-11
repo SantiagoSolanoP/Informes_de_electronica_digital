@@ -30,9 +30,11 @@ Entonces para mostrar los datos se opto por incluir una tabla comparativa.
    | Capacidad corriente salida "0"  |      8  mA    |     0.88 mA   |
    | Voltaje de entrada "1"          |    Min 2V     |    Min 4 V    |
    | Voltaje de entrada "0"          |   Max 0.8V    |     Max 1V    |
-   **Negador TTL 74LS04**: [<img src="Imagenes/pdf.png" width="4%" height="4%">](Datasheets/HD74LS04.PDF)
 
-   **Negador CMOS CD4069**: [<img src="Imagenes/pdf.png" width="4%" height="4%">](Datasheets/CD4069.PDF)
+   
+   **Negador TTL 74LS04**: [<img src="Imagenes/pdf.png" width="3%" height="3%">](Datasheets/HD74LS04.PDF)
+
+   **Negador CMOS CD4069**: [<img src="Imagenes/pdf.png" width="3%" height="3%">](Datasheets/CD4069.PDF)
 
 2. Para continuar ahora se deben realizar las simulaciones del comportamiento de los negadores TTL 74LS04 y  CMOS CD4069.
 
