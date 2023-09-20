@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Tue Sep 19 16:57:27 COT 2023 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="74.4mm"
+   height="31.35mm"
+   viewBox="658 208 496 209">
+<g stroke-linecap="square">
+<path d="M 920,220 L 924,220" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 920,260 L 924,260" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 820,320 L 920,320" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 720,320 L 760,320" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 980,320 L 1000,320 L 1000,280 L 880,280 L 880,260 L 920,260" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 740,400 L 860,400 L 860,340 L 920,340" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 1000,240 L 1020,240 L 1020,260 L 1080,260" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 980,340 L 1040,340 L 1040,320 L 1080,320" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 720,260 L 740,260 L 740,300 L 760,300" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 820,300 L 840,300 L 840,220 L 920,220" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<g>
+</g>
+<g>
+<path d="M 761,286 L 819,286 L 819,334 L 761,334 Z" stroke="#ffffb4" stroke-width="0.0" fill="#ffffb4" fill-opacity="0.7843137254901961"/>
+<path d="M 761,286 L 819,286 L 819,334 L 761,334 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<text text-anchor="start" x="764.0" y="306.75" fill="#808080" style="font-size:18px">a</text>
+<text text-anchor="start" x="764.0" y="326.75" fill="#808080" style="font-size:18px">b</text>
+<text text-anchor="end" x="816.0" y="306.75" fill="#808080" style="font-size:18px">co</text>
+<text text-anchor="end" x="816.0" y="326.75" fill="#808080" style="font-size:18px">s</text>
+<text text-anchor="middle" x="790.0" y="351.5" fill="#808080" style="font-size:18px">semiSumador</text>
+<circle cx="760.0" cy="300.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="760.0" cy="320.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="820.0" cy="300.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+<circle cx="820.0" cy="320.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 921,306 L 979,306 L 979,354 L 921,354 Z" stroke="#ffffb4" stroke-width="0.0" fill="#ffffb4" fill-opacity="0.7843137254901961"/>
+<path d="M 921,306 L 979,306 L 979,354 L 921,354 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<text text-anchor="start" x="924.0" y="326.75" fill="#808080" style="font-size:18px">a</text>
+<text text-anchor="start" x="924.0" y="346.75" fill="#808080" style="font-size:18px">b</text>
+<text text-anchor="end" x="976.0" y="326.75" fill="#808080" style="font-size:18px">co</text>
+<text text-anchor="end" x="976.0" y="346.75" fill="#808080" style="font-size:18px">s</text>
+<text text-anchor="middle" x="950.0" y="371.5" fill="#808080" style="font-size:18px">semiSumador</text>
+<circle cx="920.0" cy="320.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="920.0" cy="340.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="980.0" cy="320.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+<circle cx="980.0" cy="340.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 709,385 L 739,385 L 739,415 L 709,415 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="724.0" cy="400.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<text text-anchor="end" x="695.0" y="409.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">cin</tspan></text>
+<circle cx="740.0" cy="400.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 689,305 L 719,305 L 719,335 L 689,335 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="704.0" cy="320.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<text text-anchor="end" x="675.0" y="329.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">b</tspan></text>
+<circle cx="720.0" cy="320.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 689,245 L 719,245 L 719,275 L 689,275 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="704.0" cy="260.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<text text-anchor="end" x="675.0" y="269.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">a</tspan></text>
+<circle cx="720.0" cy="260.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<circle cx="1096.0" cy="320.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<circle cx="1096.0" cy="320.0" r="15.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="1125.0" y="329.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">s</tspan></text>
+<circle cx="1080.0" cy="320.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+</g>
+<g>
+<circle cx="1096.0" cy="260.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<circle cx="1096.0" cy="260.0" r="15.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="1125.0" y="269.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">co</tspan></text>
+<circle cx="1080.0" cy="260.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+</g>
+<g>
+<path d="M 950,270 L 920,270 C 930,254 930,226 920,210 L 940,210 C 970,210 990,220 1000,240 C 990,260 970,270 950,270 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="920.0" cy="220.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="920.0" cy="260.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="1000.0" cy="240.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+</g>
+</svg>
