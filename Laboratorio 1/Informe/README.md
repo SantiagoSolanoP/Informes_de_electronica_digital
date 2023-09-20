@@ -52,7 +52,7 @@ En el desarrollo de los circuitos se utilizara Digital, iverilog, gtkwave, yosys
 </div>
 
 <div align="center">
-<img src="Imagenes/sumador/semisumador.svg" title="semisumador" width="90%" height="90%">
+<img src="Imagenes/sumador/semiSumador.svg" title="semisumador" width="90%" height="90%">
 </div>
 
 <div align="center">
@@ -80,7 +80,11 @@ En el desarrollo de los circuitos se utilizara Digital, iverilog, gtkwave, yosys
 </div>
 
 <div align="center">
-<img src="Imagenes/sumador/sumador completo.svg" title="sumador completo" width="90%" height="90%">
+<img src="Imagenes/sumador/sumador completo tabla de verdad.png" title="sumador completo tabla de verdad" width="90%" height="90%">
+</div>
+
+<div align="center">
+<img src="Imagenes/sumador/sumadorCompleto.svg" title="sumador completo" width="90%" height="90%">
 </div>
 
 
