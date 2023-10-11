@@ -183,5 +183,12 @@ Salida resta con A<B: <img src="Imagenes/sumador/Resta A menor que B.png" width=
 Salida resta con A=B: <img src="Imagenes/sumador/Resta A igual B.png" width="90%" height="90%">
 
 ##### Funcionamiento de restador para A<B y A>B
-Para lograr que se realice la resta de dos numeros binarios de 4 bits y la suma en el mismo circuito, se busco incialmente partir desde un sumador y después agregar las caracteristicas de un restador. El primer restador que se coloco junto con el sumador realizaba las restas de A>=B pero no cumplia con B>A donde se obtenian variaciones notorias a el valor esperado. Por lo tanto, se busco implementar un circuito digital en el que se comparar incialmente el valor de A y B, y si B>A se opera en orden contrario la resta, lo que permite realizar la resta de cualquier numero binario sin errores y con la capacidad inicial de hacer sumas.
+
+Para lograr que se realice la resta de dos numeros binarios de 4 bits y la suma en el mismo circuito, se busco incialmente partir desde un sumador y después agregar las caracteristicas de un restador. El primer restador que se coloco junto con el sumador realizaba las restas de A>=B pero no cumplia con B>A donde se obtenian variaciones notorias a el valor esperado. Por lo tanto, se busco implementar un circuito digital en el que se comparar incialmente el valor de A y B, y si B>A se opera en orden contrario la resta, lo que permite realizar la resta de cualquier numero binario sin errores y con la capacidad inicial de sumar.
+
+A continuación se encuentra el codigo verilog para el sumador restador de 4bits:
+
+Diseño del circuito: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Imagenes/Sumador%20Restador/sumadorRestador.v)
+
+Casos de prueba: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Imagenes/Sumador%20Restador/sumadorRestador_tb.v)
 
