@@ -181,6 +181,50 @@ Salida resta con A>B: <img src="Imagenes/sumador/Resta A mayor que B.png" width=
 Salida resta con A<B: <img src="Imagenes/sumador/Resta A menor que B.png" width="90%" height="90%">
 
 Salida resta con A=B: <img src="Imagenes/sumador/Resta A igual B.png" width="90%" height="90%">
+##### Circuito en verilog tratado de construirse a nuestra manera guiandonos un poco del extraido digitalmente
+
+<div align="center">
+<img src="Imagenes/sumador/verilog.png" title="iverilog" width="90%" height="90%">
+</div>
+Para construir el codigo se utilizara un modulo el cual se nombra fulladderfour, con 9 entradas y 5 salidas.
+4 entradas para un numero binario y las otras 4 para el otro numero binario de 4bits, la entrada restante es la de control(M),la salida corresponde a 5 bits por si llega al limite de 4 bits o al contrario en la resta, indicaria la operacion.
+
+Despues se declara un cable, para llamarlo despues, se puede interpretar como dejar el cable volando. Luego el cable se conecta a una compuerta xor acompanado de la entrada operacion esto para hacer el procedimiento de complemento a 2. Dejando asi las variables B0,B1,B2,B3 Como el nuevo numero que entra  al sumador o por su conversion al restador.
+Luego se declaran tres cables mas, con una convension que funciona de la siguiente manera, es una palabra larga que cuenta como variable asi como en el apartado anterior, a su vez se pone una punta conectado por _to_ y luego el otro extremo, esto para una mejor comprension a la hora de leer el codigo mas adelante.
+
+Finalmente se instancian cuatro fulladders y se realiza la conexion en paralelo.
+##### Casos de prueba
+
+<div align="center">
+<img src="Imagenes/sumador/tech.png" title="tech" width="90%" height="90%">
+</div>
+1. En reg avisamos de 9 entradas con declaracion inicial en 0.
+2. Se realiza una iteracion con i hasta 512 pues tenemos 9 entradas.
+3. Avisamos de las 5 salidas.
+4. En fulladderfour dut, es donde vamos a senalar las variables y asignarles un orden, en este caso seria . y seguido el nombre de la variable y entre parentesis le asignamos la posicion dentro del array. Lo mismo con las salidas.
+
+##### Lanzar simulacion
+1. Utilizaremos el archivo Makefile el cual nos ha sido proporcionado, cambiamos las variables de nombre a nuestro gusto.
+2. El archivo file_list.txt le agregamos los modulos que utilizaremos.
+   
+##### Pruebas con SUMA
+<div align="center">
+<img src="Imagenes/sumador/prueba suma1.png" title="prueba suma1" width="90%" height="90%">
+</div>
+<div align="center">
+<img src="Imagenes/sumador/prueba suma2.png" title="prueba suma2" width="90%" height="90%">
+</div>
+
+##### Pruebas con RESTA
+<div align="center">
+<img src="Imagenes/sumador/prueba resta1.png" title="prueba resta1" width="90%" height="90%">
+</div>
+<div align="center">
+<img src="Imagenes/sumador/prueba resta2.png" title="prueba resta2" width="90%" height="90%">
+</div>
+Zip: Laboratorio 1/Informe/Imagenes/sumador/fulladderfour.zip
+
+
 
 ##### Funcionamiento de restador para A<B y A>B
 
