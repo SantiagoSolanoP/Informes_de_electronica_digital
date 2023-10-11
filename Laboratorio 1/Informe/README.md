@@ -188,7 +188,7 @@ Para lograr que se realice la resta de dos numeros binarios de 4 bits y la suma 
 
 A continuación se encuentra el codigo verilog para el sumador restador de 4bits:
 
-Diseño del circuito: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Imagenes/Sumador%20Restador/sumadorRestador.v)
+Diseño del circuito: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Sumador%20Restador/sumadorRestador.v)
 
-Casos de prueba: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Imagenes/Sumador%20Restador/sumadorRestador_tb.v)
+Casos de prueba: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Sumador%20Restador/sumadorRestador_tb.v)
 
