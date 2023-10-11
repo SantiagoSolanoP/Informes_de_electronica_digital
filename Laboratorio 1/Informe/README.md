@@ -192,3 +192,9 @@ Diseño del circuito: [<img src="Imagenes/sumador/verilog.png" width="3%" height
 
 Casos de prueba: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Sumador%20Restador/sumadorRestador_tb.v)
 
+##### Circuito digital
+
+<div align="center">
+<img src="Sumador%20Restador/sumadorRestador.svg" title="sumador restador" width="90%" height="90%">
+</div>
+
