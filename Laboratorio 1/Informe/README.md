@@ -152,7 +152,27 @@ Diseño del circuito: [<img src="Imagenes/sumador/verilog.png" width="3%" height
 
 Casos de prueba: [<img src="Imagenes/sumador/verilog.png" width="3%" height="3%">](Imagenes/sumador/sumadorCompleto_tb.v)
 
+### Sumador-Restador 
+Para la realizacion del sumador restador sera necesario entender cuál será el funcionamiento de este circuito, por tanto es necesario aclarar que este circuito se realizará mediante cuatro sumadores completos, es decir un sumador completo para cada cifra, esto dado a que la suma se realiza dígito a dígito. Para la resta se utilizará el mismo circuito, sin embargo se deberá realizar una modificación de tal forma que el segundo número se reste utilizando complemento a dos, gracias a esto se permitirá realizar una sustracción a partir de la suma del complemento de este número. Para poder realizarlo en digital se partirá a partir de un sumador de 4 bits.
+#### Sumador de 4 Bits
+Para poder realizar el sumador de 4 bits e digital se realizara uniendo 4 sumadores completos, tal y como se trabajaron anteriormente, y se interconectara el Carry out del cada sumador a el Carry in del anterior, de esta manera, cada vez que al realizar la suma, nos genere un "Carry", este se sumara automaticamente a la siguiente cifra. Es importante denotar que la conexion entre los carrys se debera hacer del Carry out de la cifra menos significativa al de la siguiente cifra mas significativa, y se procedera en ese orden hasta terminar las cifras y obtener un carry out de la cifra mas significativa, en este caso, dado que el sistema solo maneja 4 bits, se dira que el carry out de la cifra mas significativa representara un estado de "Overflow"
+(inserte imagen del sumador completo)
 
+#### Sumador restador de 4 bits
+Para poder realizar el sumador restador de 4 bits como se explico anteriormente se deberan tener en cuenta varios elementos:
+   1. La operacion realizada se realizara entre 2 numeros, A y B de 4 bits cada uno.
+   2. Se debe poder cambiar de operacion mediante un bit individual, 1 sera la resta y 0 sera la suma.
+   3. Para la resta el numero B se debera restar mediante el complemento a 2.
+Teniendo en cuenta esto se realizara la conexion del circuito de la siguiente manera:
+
+(inserte imagen del sumador restador)
+
+En este circuito podemos ver como los bits del numero B estan conectadas a un "XOR", a esta compuerta a su vez esta conectada el bit individual de operacion. La funcion que cumple este "XOR" sera la de invertir el numero B para poder restarlo con el complemento a 2, dado a que esta conectado con el bit de la operacion, cuando la operacion este en 0(suma), el "XOR" dara como salida el mismo valor de salida que el numero B, sin embargo, cuando la operacion se encuentre en 1, la salida sera la inversion del numero B. Ademas, dado a que la operacion tambien esta conectada al "Carry In" del sumador de 4 bits, cuando la operacion sea 1, se sumara 1 al numero B, permitiendo hacer una resta mediante complemento a 2.
+
+##### Comportamiento del Carry Out
+El carry out presenta comportamiento diferentes para la suma y la resta, en el caso de la suma el circuito presentara la salida del carry out por defecto como un "0", cuando el circuito presente un estado de overflow, "Carry out" presentara un "1", indicando que se necesitara de otro bit para expresar la salida adecuada.
+
+En el caso de la resta, el carry out presentara un estado de "1" por defecto, indicando que la operacion que se esta realizando es una resta, cuando el resultado sea negativo, la salida generada estara invertida con un "1" adicional, mientras que el carry out pasara a un estado de "0", indicando que el resultado de la resta es negativo.
 
 
 
