@@ -11,20 +11,21 @@ Mediante la aplicacion de Digital se pondra la tabla de verdad para poder implem
 
 
 ## Resultados
-Para poder realizar la implementacion del visualizador de 7 segmentos sera necesario esta
-##Conclusiones
+### Implementacion en Digital
+Para poder realizar la implementacion del visualizador de 7 segmentos sera necesario establecer que entradas tiene el display, estas se pueden apreciar desde el datasheet de cualquier diplay, estas entradas se distribuyen en a, b, c, d, e, f, g ydp de la siguiente manera:
 
-Reglas de hardware para Blaster Altera, agregar en 
-sudo geany /etc/udev/rules.d/60-blaster.rules
+[inserte imagen del display]
 
-```bash
-# Altera USB Blaster
-ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6001", MODE="660", GROUP="plugdev", TAG+="uaccess"
-# Altera USB Blaster2
-ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6010", MODE="660", GROUP="plugdev", TAG+="uaccess"
-ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6810", MODE="660", GROUP="plugdev", TAG+="uaccess"
-```
-Reiniciar reglas con:
-```bash
-sudo udevadm control --reload-rules
-```
+Debido a que el display debera poder mostrar los numero del 0 al 15 en hexadecimal deberos usar como entradas del sistema 4 bits que permitiran contar hasta ese numero. Asi pues, podremos encontrar un sistema en el cual la entrada seran los 4 bits que representaran al numero que queremos mostrar, y como salidas seran cada una de las variables del display de 7 segmentos, no obstante, dado a que el punto decimal no lo usaremos, este ira conectado al mismo punto de alimentacion del display.
+
+Con esto en mente, crearemos una tabla de verdad en la cual podamos evaluar cada entrada con sus respectivas salidas, obteniendo la siguiente tabla:
+
+[Inserte imagen de la tabla]
+
+A partir de esta tabla y usando las herramientas que proporciona digital obtendremos las expresiones del circuito obteniendo los siguientes resultados:
+
+[Inserte formulas]
+
+Con estas formulas, mediante verilog crearemos un codigo para poder ejectutar este circuito en verilog, con esto podremos importar un archivo externo a digital y crear un circuito simplificado que nos permita mostrar numero en el display de 7 segmentos, obteniendo un circuito como se muestra en la siguiente imagen:
+
+[Inserte imagen del circuito]
