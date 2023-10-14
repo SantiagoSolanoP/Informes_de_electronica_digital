@@ -25,11 +25,17 @@ Con esto en mente, crearemos una tabla de verdad en la cual podamos evaluar cada
 A partir de esta tabla y usando las herramientas que proporciona digital obtendremos las expresiones del circuito obteniendo los siguientes resultados:
 
 a = (¬A ∧ ¬B ∧ ¬C ∧ D) ∨ (¬A ∧ B ∧ ¬C ∧ ¬D) ∨ (A ∧ ¬B ∧ C ∧ D) ∨ (A ∧ B ∧ ¬C ∧ D)
+
 b = (¬A ∧ B ∧ ¬C ∧ D) ∨ (A ∧ C ∧ D) ∨ (A ∧ B ∧ ¬D) ∨ (B ∧ C ∧ ¬D)
+
 c = (¬A ∧ ¬B ∧ C ∧ ¬D) ∨ (A ∧ B ∧ ¬D) ∨ (A ∧ B ∧ C)
+
 d = (¬A ∧ ¬B ∧ ¬C ∧ D) ∨ (¬A ∧ B ∧ ¬C ∧ ¬D) ∨ (A ∧ ¬B ∧ C ∧ ¬D) ∨ (B ∧ C ∧ D)
+
 e = (¬A ∧ D) ∨ (¬A ∧ B ∧ ¬C) ∨ (¬B ∧ ¬C ∧ D)
+
 f = (¬A ∧ ¬B ∧ D) ∨ (¬A ∧ ¬B ∧ C) ∨ (¬A ∧ C ∧ D) ∨ (A ∧ B ∧ ¬C ∧ D)
+
 g = (¬A ∧ ¬B ∧ ¬C) ∨ (¬A ∧ B ∧ C ∧ D) ∨ (A ∧ B ∧ ¬C ∧ ¬D)
 
 Con estas formulas, mediante verilog crearemos un codigo para poder ejectutar este circuito en verilog, con esto podremos importar un archivo externo a digital y crear un circuito simplificado que nos permita mostrar numero en el display de 7 segmentos, obteniendo un circuito como se muestra en la siguiente imagen:
