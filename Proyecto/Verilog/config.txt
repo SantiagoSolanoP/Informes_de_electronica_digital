@@ -1,0 +1,48 @@
+##  CONFIGURACIÓN DE PROYECTO agregar en el archivo top.qsf ##
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE10E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY build
+
+## ASIGNACIÓN DE PINES ##
+
+set_location_assignment PIN_30 -to VCC
+set_location_assignment PIN_32 -to trig
+set_location_assignment PIN_34 -to echo
+set_location_assignment PIN_39 -to GND
+
+set_location_assignment PIN_42 -to respSeguidorLinea1;
+set_location_assignment PIN_44 -to GND_respSeguidorLinea1;
+set_location_assignment PIN_49 -to VCC_respSeguidorLinea1;
+
+set_location_assignment PIN_28 -to respSeguidorLinea2;
+set_location_assignment PIN_31 -to VCC_respSeguidorLinea2;
+set_location_assignment PIN_33 -to GND_respSeguidorLinea2;
+
+set_location_assignment PIN_43 -to m_izquierdo;
+set_location_assignment PIN_46 -to m_derecho;
+set_location_assignment PIN_50 -to GND_motor_iz;
+set_location_assignment PIN_51 -to GND_motor_de;
+
+set_location_assignment PIN_127 -to A
+set_location_assignment PIN_126 -to B
+set_location_assignment PIN_125 -to C
+set_location_assignment PIN_124 -to D
+set_location_assignment PIN_121 -to E
+set_location_assignment PIN_120 -to F
+set_location_assignment PIN_119 -to G
+set_location_assignment PIN_115 -to H
+
+set_location_assignment PIN_128 -to D1
+set_location_assignment PIN_129 -to D2
+set_location_assignment PIN_132 -to D3
+set_location_assignment PIN_133 -to D4
+
+set_location_assignment PIN_135 -to D5
+set_location_assignment PIN_136 -to D6
+set_location_assignment PIN_137 -to D7
+set_location_assignment PIN_138 -to D8
+
+
+set_location_assignment PIN_23 -to clk
