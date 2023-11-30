@@ -44,7 +44,7 @@ El módulo de control de motores utiliza dos parametros fundamentales:
    
    Caso 1: Lo enunciado anteriormente, si hay un objeto adelante se detendrá.
    
-   Si el sensor no detecta ningún objeto al frente actuará Los sensores infrarrojo,s estos determinarán qué obstáculo qué camino debe seguir los el carro sabiendo que si uno de estos se activa se activara el motor izquierdo generando un giro hacia la izquiera, si se activa el otro sensor deberá realizar un giro en la dirección opuesta:
+2. Si el sensor no detecta ningún objeto al frente actuará Los sensores infrarrojo,s estos determinarán qué obstáculo qué camino debe seguir los el carro sabiendo que si uno de estos se activa se activara el motor izquierdo generando un giro hacia la izquiera, si se activa el otro sensor deberá realizar un giro en la dirección opuesta:
    
    Caso 2: Si ambos infrarrojos están encendidos, sigue derecho.
    
