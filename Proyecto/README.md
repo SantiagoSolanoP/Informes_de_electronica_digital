@@ -19,7 +19,7 @@ Convención para nuestras variables:
 
 
 ## Resultados
-### Implementacion en Digital
+### Implementacion en Verilog
 Se realizo un vehiculo con la capacidad de desplazarce a partir de las respuestas de sensores seguidores de linea y distancia, los cuales permiten o no el funcionamiento de los motores.
 
 <div align="center">
