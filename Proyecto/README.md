@@ -41,6 +41,8 @@ En este bloque entra el segmento del codigo que permite la utilizacion del senso
 
 #### Visualizacion del display
 Este modulo no presenta practicamente ninguna diferencia respecto al sensor ultrasonido, este modulo sigue usando la salida generada por el sensor, realizando su clasificacion mediante descomposicion factorial y permitiendo asi, identificar unidades, decenas, centenas y decimas, y asi escoger el display para mostrarse y finalmente mostrandolo.
+Se apoya también con un modulo externo, ContadorSeleccionadorDisplay, este modulo cuenta 0, 1, 2, 3 de manera decimal y reiniciará cuando se desborde. Esta cuenta nos sirve para encender un display a la vez, los cuales son respectivamente, DECIMAL, UNIDADES, DECENA, CENTENA => D1, D2, D3, D4.
+Por último se encienden los leds correspondientes al display para formar la figura del número.
 <div align="center">
 <img src="Imagenes/mostrarDisplay.svg" title="Modulo de visualizacion en display 7 segmentos" width="70%" height="70%">
 </div>
