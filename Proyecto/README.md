@@ -38,7 +38,22 @@ Este modulo no presenta practicamente ninguna diferencia respecto al sensor ultr
 </div>
 
 #### Control de motores
-El módulo de control de motores utiliza dos parametros fundamentales: el primero de ellos será la salida del sensor ultrasónico, este le determinará la distancia a la cual los motores se pueden mover, si los motores detectan un objeto próximo a este le asignará a los motores la instrucción de no moverse y por tanto, se queda estático evitando que el carro choque con el objeto que tenga al frente. Si el sensor no detecta ningún objeto al frente actuará Los sensores infrarrojo,s estos determinarán qué obstáculo qué camino debe seguir los el carro sabiendo que si uno de estos se activa se activara el motor izquierdo generando un giro hacia la izquiera, si se activa el otro sensor deberá realizar un giro en la dirección opuesta. Si ninguno de los dos detecta ninguna variación en el camino los dos motores se activarán y andarán línea recta. De esta forma evitará que el carro siga direcciones o instrucciones erróneas y cumpla con su funcionamiento esperado.
+El módulo de control de motores utiliza dos parametros fundamentales: 
+1. El primero de ellos será la entrada del sensor ultrasónico, este le determinará la distancia a la cual los motores se pueden mover y a su vez en el modulose tendrá un limite que será 1111 o 15 en decimal, el cual se usará como 15cm
+   Luego habrá un condicional if, que evaluará si es mayor o menor, si es mayor dará 1 lógico, sino un 0 lógico, dato que se usa para que si se detecta un objeto próximo le asignará a los motores la instrucción de no moverse y por tanto se queda estático evitando que el carro choque con el objeto que tenga al frente.
+   
+   Caso 1: Lo enunciado anteriormente, si hay un objeto adelante se detendrá.
+   
+   Si el sensor no detecta ningún objeto al frente actuará Los sensores infrarrojo,s estos determinarán qué obstáculo qué camino debe seguir los el carro sabiendo que si uno de estos se activa se activara el motor izquierdo generando un giro hacia la izquiera, si se activa el otro sensor deberá realizar un giro en la dirección opuesta:
+   
+   Caso 2: Si ambos infrarrojos están encendidos, sigue derecho.
+   
+	 Caso 3: Si ambos infrarrojos están apagados, sigue derecho, de esta forma evitará que el carro siga direcciones o instrucciones erróneas y cumpla con su funcionamiento esperado.
+
+   Caso 4: Si infrarrojo 1(izquierdo) apagado, e infrarrojo 2(derecho) encendido, giro derecha.
+   
+	 Caso 5: Si Infrarrojo 1(izquierdo) encendido e infrarrojo 2(derecho) apagado, gira izquierda.
+
 <div align="center">
 <img src="Imagenes/controlMotor.svg" title="Modulo de control de motores" width="70%" height="70%">
 </div>
