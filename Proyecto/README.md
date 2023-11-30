@@ -8,6 +8,14 @@
 3. Dividir el funcionamiento del codigo por modulos que faciliten la comprencion por rtl. 
 ## Procedimiento
 Mediante la aplicacion de Digital se desarrollaran los modulos necesarios para el funcionamiento de un vehiculo seguidor de linea, despues de tener los modulos y comprender su funcionamiento se desarrollara o se modificara el codigo de Digital con los requerimientos faltantes.
+Convención para nuestras variables:
+1. motor_iz es el motor 1.
+2. respSeguidorLinea2 es el Sensor infrarrojo 2.
+3. GND/VCC es la entrada/salida del Sensor ultrasonido.
+4. motor_de es el motor 2.
+5. respSeguidorLinea1 es el Sensor infrarrojo 1.
+
+
 
 
 ## Resultados
@@ -40,11 +48,11 @@ Este modulo no presenta practicamente ninguna diferencia respecto al sensor ultr
 #### Control de motores
 El módulo de control de motores utiliza dos parametros fundamentales: 
 1. El primero de ellos será la entrada del sensor ultrasónico, este le determinará la distancia a la cual los motores se pueden mover y a su vez en el modulose tendrá un limite que será 1111 o 15 en decimal, el cual se usará como 15cm
-   Luego habrá un condicional if, que evaluará si es mayor o menor, si es mayor dará 1 lógico, sino un 0 lógico, dato que se usa para que si se detecta un objeto próximo le asignará a los motores la instrucción de no moverse y por tanto se queda estático evitando que el carro choque con el objeto que tenga al frente.
+   Luego habrá un condicional if, que evaluará si es mayor o menor, si es mayor dará 1 lógico, sino un 0 lógico, dato que se usa para que si se detecta un objeto próximo le asignará a los motores la instrucción de girar a la derecha, sino que siga derecho.
    
-   Caso 1: Lo enunciado anteriormente, si hay un objeto adelante se detendrá.
+   Caso 1: Lo enunciado anteriormente, si no hay un objeto adelante seguirá hacia adelante, en dado caso que no se activen los sensores infrarrojos y haya un obstaculo, el carro girará a la derecha(convencionalmente).
    
-2. Si el sensor no detecta ningún objeto al frente actuará Los sensores infrarrojo,s estos determinarán qué obstáculo qué camino debe seguir los el carro sabiendo que si uno de estos se activa se activara el motor izquierdo generando un giro hacia la izquiera, si se activa el otro sensor deberá realizar un giro en la dirección opuesta:
+2. Si el sensor no detecta ningún objeto al frente actuará Los sensores infrarrojos, estos determinarán qué obstáculo qué camino debe seguir el carro sabiendo que si uno de estos se activa se activara el motor izquierdo generando un giro hacia la izquiera, si se activa el otro sensor deberá realizar un giro en la dirección opuesta:
    
    Caso 2: Si ambos infrarrojos están encendidos, sigue derecho.
    
