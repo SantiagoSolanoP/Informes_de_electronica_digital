@@ -28,18 +28,18 @@ En este bloque entra el segmento del codigo que permite la utilizacion del senso
 
 
 <div align="center">
-<img src="Verilog/obtener distancia" title="Modulo de sensor ultrasonico" width="70%" height="70%">
+<img src="Imagenes/obtener_D_U_D_C_Distancia.svg" title="Modulo de sensor ultrasonico" width="70%" height="70%">
 </div>
 
 #### Visualizacion del display
 Este modulo no presenta practicamente ninguna diferencia respecto al sensor ultrasonido, este modulo sigue usando la salida generada por el sensor, realizando su clasificacion mediante descomposicion factorial y permitiendo asi, identificar unidades, decenas, centenas y decimas, y asi escoger el display para mostrarse y finalmente mostrandolo.
 <div align="center">
-<img src="Verilog/obtener distancia" title="Modulo de sensor ultrasonico" width="70%" height="70%">
+<img src="Imagenes/mostrarDisplay.svg" title="Modulo de visualizacion en display 7 segmentos" width="70%" height="70%">
 </div>
 
 #### Control de motores
 El módulo de control de motores utiliza dos parametros fundamentales: el primero de ellos será la salida del sensor ultrasónico, este le determinará la distancia a la cual los motores se pueden mover, si los motores detectan un objeto próximo a este le asignará a los motores la instrucción de no moverse y por tanto, se queda estático evitando que el carro choque con el objeto que tenga al frente. Si el sensor no detecta ningún objeto al frente actuará Los sensores infrarrojo,s estos determinarán qué obstáculo qué camino debe seguir los el carro sabiendo que si uno de estos se activa se activara el motor izquierdo generando un giro hacia la izquiera, si se activa el otro sensor deberá realizar un giro en la dirección opuesta. Si ninguno de los dos detecta ninguna variación en el camino los dos motores se activarán y andarán línea recta. De esta forma evitará que el carro siga direcciones o instrucciones erróneas y cumpla con su funcionamiento esperado.
 <div align="center">
-<img src="Verilog/obtener distancia" title="Modulo de sensor ultrasonico" width="70%" height="70%">
+<img src="Imagenes/controlMotor.svg" title="Modulo de control de motores" width="70%" height="70%">
 </div>
 
