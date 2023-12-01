@@ -19,7 +19,7 @@ Convención para nuestras variables:
 
 
 ## Resultados
-### Implementacion en Verilog
+### Implementación en Verilog
 Se realizo un vehiculo con la capacidad de desplazarce a partir de las respuestas de sensores seguidores de linea y distancia, los cuales permiten o no el funcionamiento de los motores.
 
 <div align="center">
@@ -39,7 +39,7 @@ En este bloque entra el segmento del codigo que permite la utilizacion del senso
 <img src="Imagenes/obtener_D_U_D_C_Distancia.svg" title="Modulo de sensor ultrasonico" width="70%" height="70%">
 </div>
 
-#### Visualizacion del display
+#### Visualización del display
 Este modulo no presenta practicamente ninguna diferencia respecto al sensor ultrasonido, este modulo sigue usando la salida generada por el sensor, realizando su clasificacion mediante descomposicion factorial y permitiendo asi, identificar unidades, decenas, centenas y decimas, y asi escoger el display para mostrarse y finalmente mostrandolo.
 Se apoya también con un modulo externo, ContadorSeleccionadorDisplay, este modulo cuenta 0, 1, 2, 3 de manera decimal y reiniciará cuando se desborde. Esta cuenta nos sirve para encender un display a la vez, los cuales son respectivamente, DECIMAL, UNIDADES, DECENA, CENTENA => D1, D2, D3, D4.
 Por último se encienden los leds correspondientes al display para formar la figura del número.
@@ -66,5 +66,28 @@ El módulo de control de motores utiliza dos parametros fundamentales:
 
 <div align="center">
 <img src="Imagenes/controlMotor.svg" title="Modulo de control de motores" width="70%" height="70%">
+</div>
+
+### Señales obtenidas de los resultados con GTKwave
+
+#### Seguidor de linea izquierdo apagado y derecho apagado
+<div align="center">
+<img src="Imagenes/seguidoresDelinea 0_0.png" title="seguidoresDelinea 0_0" width="70%" height="70%">
+</div>
+
+
+#### Seguidor de linea izquierdo prendido y derecho apagado
+<div align="center">
+<img src="Imagenes/seguidoresDelinea 0_1.png" title="seguidoresDelinea 0_1" width="70%" height="70%">
+</div>
+
+#### Seguidor de linea izquierdo apagado y derecho prendido
+<div align="center">
+<img src="Imagenes/seguidoresDelinea 1_0.png" title="seguidoresDelinea 1_0" width="70%" height="70%">
+</div>
+
+#### Seguidor de linea izquierdo prendido y derecho prendido
+<div align="center">
+<img src="Imagenes/seguidoresDelinea 1_1.png" title="seguidoresDelinea 1_1" width="70%" height="70%">
 </div>
 
