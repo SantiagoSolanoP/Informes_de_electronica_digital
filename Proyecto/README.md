@@ -32,6 +32,9 @@ Convención para nuestras variables:
 <div align="center">
 <img src="Imagenes/2.png" title="Carro" width="70%" height="70%">
 </div>
+
+Un punto a tener en cuenta es que le faltaba potencia a los motores, en este caso una tensión mayor ya que la fpga era muy pesada para la tensión nominada, por ello se apoya con la mano la parte de atrás el carro, y así los sensores responden de mejor manera al liberar potencia en los motores. 
+
 Link para presentación con vídeos: 
 
 https://drive.google.com/drive/folders/11G0nuus5TgfUNZclDflMXrTkXzRyUIKW?usp=sharing
