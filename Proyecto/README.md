@@ -1,7 +1,11 @@
 # Vehiculo seguidor de linea antichoques
 
-## Introduccion
-
+## Integrantes
+Edwin Fernando Mosquera Gomez
+Luis Santiago Solano Pardo
+Ricardo Velasquez Martinez
+## Descripcion y contexto del problema
+Mediante la implementación de este proyecto se busca la construcción de un robot sigue líneas, el cual sea capaz de esquivar obstáculos y seguir una línea mediante diferentes implementaciones de sensores tales como lo son los sensores infrarrojos o los sensores ultrasónicos. A partir de estos sensores, cumplir con el funcionamiento establecido e implementar todas estas anteriores ideas mediante el uso de una FPGA CYCLONE IV.
 ## Objetivos
 1. Diseñar en verilog el codigo de un vehiculo seguidor de linea con sensor de distancia añadido.
 2. Implementar el codigo en un carro fisico
