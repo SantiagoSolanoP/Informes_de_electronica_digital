@@ -23,6 +23,19 @@ Convención para nuestras variables:
 
 
 ## Resultados
+
+### Presentación:
+<div align="center">
+<img src="Imagenes/1.png" title="Carro" width="70%" height="70%">
+</div>
+
+<div align="center">
+<img src="Imagenes/2.png" title="Carro" width="70%" height="70%">
+</div>
+Link para presentación con vídeos: 
+
+https://drive.google.com/drive/folders/11G0nuus5TgfUNZclDflMXrTkXzRyUIKW?usp=sharing
+
 ### Implementación en Verilog
 Se realizo un vehiculo con la capacidad de desplazarce a partir de las respuestas de sensores seguidores de linea y distancia, los cuales permiten o no el funcionamiento de los motores.
 
