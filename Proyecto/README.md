@@ -71,22 +71,27 @@ El módulo de control de motores utiliza dos parametros fundamentales:
 ### Señales obtenidas de los resultados con GTKwave
 
 #### Seguidor de linea izquierdo apagado y derecho apagado
+Se observa que cuando los dos seguidores de linea estan apagados, el motor derecho se mantiene encendido sin importar la distancia, enves el motor izquierdo se ennciende unicamente cuando la distancia es mayor a 15cm.
 <div align="center">
 <img src="Imagenes/seguidoresDelinea 0_0.png" title="seguidoresDelinea 0_0" width="70%" height="70%">
 </div>
 
 
 #### Seguidor de linea izquierdo prendido y derecho apagado
-<div align="center">
-<img src="Imagenes/seguidoresDelinea 0_1.png" title="seguidoresDelinea 0_1" width="70%" height="70%">
-</div>
-
-#### Seguidor de linea izquierdo apagado y derecho prendido
+Si el seguidor de linea izquierdo se encuentra encendido, el motor derecho sin importar la distancia se activara pero el motor izquierdo siempre se encontrara desactivado.
 <div align="center">
 <img src="Imagenes/seguidoresDelinea 1_0.png" title="seguidoresDelinea 1_0" width="70%" height="70%">
 </div>
 
+
+#### Seguidor de linea izquierdo apagado y derecho prendido
+El seguidor de linea derecho encendido representa que el motor derecho solo se enciende si la distancia es menos a 15cm, si la distancia es mayor se desactiva. El motor izquierdo se enciende si la distancia es mayor o igual a 15cm unicamente.
+<div align="center">
+<img src="Imagenes/seguidoresDelinea 0_1.png" title="seguidoresDelinea 0_1" width="70%" height="70%">
+</div>
+
 #### Seguidor de linea izquierdo prendido y derecho prendido
+Se observa que cuando los dos seguidores de linea estan apagados, el motor derecho se mantiene encendido sin importar la distancia, enves el motor izquierdo se ennciende unicamente cuando la distancia es mayor a 15cm.
 <div align="center">
 <img src="Imagenes/seguidoresDelinea 1_1.png" title="seguidoresDelinea 1_1" width="70%" height="70%">
 </div>
