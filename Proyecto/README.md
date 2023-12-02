@@ -37,7 +37,10 @@ Un punto a tener en cuenta es que le faltaba potencia a los motores, en este cas
 
 Link para presentación con vídeos: 
 
-https://drive.google.com/drive/folders/11G0nuus5TgfUNZclDflMXrTkXzRyUIKW?usp=sharing
+## Implementación del carro con FPGA
+https://youtu.be/s7XLuw0LVUI
+## Proyecto de carro explicado con RTL
+https://youtu.be/TvdgziGMBIk?si=tDu6txiROBrK5tin
 
 ### Implementación en Verilog
 Se realizo un vehiculo con la capacidad de desplazarce a partir de las respuestas de sensores seguidores de linea y distancia, los cuales permiten o no el funcionamiento de los motores.
